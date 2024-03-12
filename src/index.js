@@ -72,16 +72,16 @@ function formatDay(timestamp) {
              <img src="${day.condition.icon_url}" class="weather-forecast-icon"/>
             <div class="weather-forecast-temperatures">
               <div class="weather-forecast-temperature">
-                <strong>${Math.round(day.temperature.maximum)}</strong>
+                <strong>${Math.round(day.temperature.maximum)}°C</strong>
               </div>
-              <div class="weather-forecast-temperature">${Math.round(day.temperature.minimum)}</div>
-            </div>
+              <div class="weather-forecast-temperature">${Math.round(day.temperature.minimum)}°C</div>
+        </div>
         `;
         }
       });
 
-   forecastElement.innerHTML = forecastHtml;
    let forecastElement = document.querySelector("#forecast");
+   forecastElement.innerHTML = forecastHtml;
   }
   
   let searchFormElement = document.querySelector("#search-form");
