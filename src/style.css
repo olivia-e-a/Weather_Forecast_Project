@@ -74,8 +74,9 @@ main {
 
 .weather-forecast-day {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-top: 30px;
+    align-items: center;
   }
 
 .weather-forecast-date {
@@ -84,13 +85,14 @@ main {
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 20px;
+
 }
 
 .weather-forecast-icon {
-    width: 88px;
-    height: 88px;
+    width: 60px;
+    height: 60px;
     display: block;
-    margin: 0 auto;
+    margin: 0 0 0 0;
 }
 
 .weather-forecast-temperatures {
@@ -99,6 +101,7 @@ main {
     margin-top: 10px;
     display: flex;
     justify-content: center;
+    flex-direction: row;
 
 }
   
