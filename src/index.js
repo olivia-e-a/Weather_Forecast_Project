@@ -75,6 +75,7 @@ function displayForecast(response) {
           ${Math.round(day.temperature.minimum)}°C
           </span>
         </div>
+      </div>
       `;
     }
   });
